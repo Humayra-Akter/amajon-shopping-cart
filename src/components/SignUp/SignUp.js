@@ -43,48 +43,65 @@ const SignUp = () => {
   };
 
   return (
-    <div className="form-container">
-      <div>
-        <h2 className="form-title">Signup</h2>
-        <form onSubmit={handleCreateUser}>
-          <div className="input-grp">
-            <label htmlFor="email">Email</label>
+    <div className="">
+      <div className="w-[500px] mt-20 border-2 border-[#95a0a7] rounded-lg p-10 flex justify-center items-center mx-auto">
+        <div>
+          <h2 className="text-3xl text-center mb-4 font-semibold text-[#2a414f]">
+            Signup
+          </h2>
+          <form onSubmit={handleCreateUser}>
+            <div className="mb-5">
+              <label className="block ml-1 pb-1" htmlFor="email">
+                Email
+              </label>
+              <input
+                className="w-[400px] h-10 border-2 border-[#95a0a7] rounded-lg text-lg"
+                onBlur={handleEmailBlur}
+                type="email"
+                name="email"
+                required
+              />
+            </div>
+            <div className="mb-5">
+              <label className="block ml-1 pb-1" htmlFor="password">
+                Password
+              </label>
+              <input
+                className="w-[400px] h-10 border-2 border-[#95a0a7] rounded-lg text-lg"
+                onBlur={handlePasswordBlur}
+                type="password"
+                name="password"
+                id=""
+                required
+              />
+            </div>
+            <div className="mb-5">
+              <label className="block ml-1 pb-1" htmlFor="confirm-password">
+                Confirm Password
+              </label>
+              <input
+                className="w-[400px] h-10 border-2 border-[#95a0a7] rounded-lg text-lg"
+                onBlur={handleConfirmPasswordBlur}
+                type="password"
+                name="confirm-password"
+                id=""
+                required
+              />
+            </div>
+            <p style={{ color: "red" }}>{error}</p>
             <input
-              onBlur={handleEmailBlur}
-              type="email"
-              name="email"
-              required
+              className="w-[400px] rounded-lg h-10 text-xl cursor-pointer bg-orange-300 hover:bg-orange-400"
+              type="submit"
+              value="Signup"
             />
-          </div>
-          <div className="input-grp">
-            <label htmlFor="password">Password</label>
-            <input
-              onBlur={handlePasswordBlur}
-              type="password"
-              name="password"
-              id=""
-              required
-            />
-          </div>
-          <div className="input-grp">
-            <label htmlFor="confirm-password">Confirm Password</label>
-            <input
-              onBlur={handleConfirmPasswordBlur}
-              type="password"
-              name="confirm-password"
-              id=""
-              required
-            />
-          </div>
-          <p style={{ color: "red" }}>{error}</p>
-          <input className="form-submit" type="submit" value="Signup" />
-        </form>
-        <p>
-          Already have an account?
-          <Link className="form-link" to="/login">
-            Login
-          </Link>
-        </p>
+          </form>
+          <p className="mt-2 flex items-center justify-center">
+            Already have an account?
+            <Link className="text-orange-400 font-bold" to="/login">
+              Login
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );
