@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import signup from "../../images/Signup.png";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
@@ -43,8 +44,11 @@ const SignUp = () => {
   };
 
   return (
-    <div className="">
-      <div className="w-[500px] mt-20 border-2 border-[#95a0a7] rounded-lg p-10 flex justify-center items-center mx-auto">
+    <div className="flex items-center justify-center">
+      <div className="w-[500px] mt-20 flex justify-center items-center mx-auto">
+        <img src={signup} className="w-96 h-96" />
+      </div>
+      <div className="w-[500px] mt-20 border-2 border-[#95a0a7] rounded-lg p-10 flex justify-center items-center mr-auto -ml-32">
         <div>
           <h2 className="text-3xl text-center mb-4 font-semibold text-[#2a414f]">
             Signup
