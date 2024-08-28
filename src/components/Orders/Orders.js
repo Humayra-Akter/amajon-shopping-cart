@@ -4,19 +4,19 @@ import useCart from "../../Hooks/useCart";
 import { removeFromDb } from "../../utilities/fakedb";
 import Cart from "../Cart/Cart";
 import ReviewItem from "../ReviewItem/ReviewItem";
-import "./Orders.css";
+
 
 const Orders = () => {
-  const [cart, setcart] = useCart();
+  const [cart, setCart] = useCart();
   const navigate = useNavigate();
   const handleRemoveProduct = (product) => {
     const rest = cart.filter((pd) => pd._id !== product._id);
-    setcart(rest);
+    setCart(rest);
     removeFromDb(product._id);
   };
   return (
     <div className="shop-container">
-      <div className="review-items-container">
+      <div className="mx-auto">
         {cart.map((product) => (
           <ReviewItem
             key={product._id}
