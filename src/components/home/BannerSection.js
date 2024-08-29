@@ -49,7 +49,7 @@ const BannerSection = () => {
               alt={item.title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-2xl">
+            <div className="absolute inset-0 flex items-center justify-center text-white text-2xl">
               {item.title}
             </div>
           </div>
