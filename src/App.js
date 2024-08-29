@@ -9,13 +9,14 @@ import RequireAuth from "./components/RequireAuth/RequireAuth";
 import Shipment from "./components/Shipment/Shipment";
 import Shop from "./components/Shop/Shop";
 import SignUp from "./components/SignUp/SignUp";
+import Home from "./components/home/Home";
 
 function App() {
   return (
     <div>
       <Header></Header>
       <Routes>
-        <Route path="/" element={<Shop></Shop>}></Route>
+        <Route path="/" element={<Home/>}></Route>
         <Route path="/shop" element={<Shop></Shop>}></Route>
         <Route path="/orders" element={<Orders></Orders>}></Route>
         <Route

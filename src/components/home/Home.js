@@ -1,20 +1,20 @@
 import React from "react";
-import Banner from "./banner";
 import ItemCategory from "./ItemCategory";
 import MostFavorite from "./MostFavorite";
 import Reviews from "./Reviews";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import BannerSection from "./BannerSection";
 
 const Home = () => {
   return (
     <div>
-      <Banner />
+      <BannerSection />
       <ItemCategory />
       <MostFavorite />
       <Reviews />
       <Contact />
-      <Footer/>
+      <Footer />
     </div>
   );
 };
