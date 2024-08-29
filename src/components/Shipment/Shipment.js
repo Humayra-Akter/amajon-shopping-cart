@@ -30,17 +30,30 @@ const Shipment = () => {
   };
 
   return (
-    <div className="form-container">
+    <div className="w-[500px] mt-20 border-2 border-[#95a0a7] rounded-lg p-10 flex justify-center items-center mx-auto">
       <div>
-        <h2 className="form-title">Shipping Information</h2>
+        <h2 className="text-3xl text-center mb-4 font-semibold text-[#2a414f]">
+          Shipping Information
+        </h2>
         <form onSubmit={handleCreateUser}>
-          <div className="input-grp">
-            <label htmlFor="name">Name</label>
-            <input onBlur={handleNameBlur} type="text" name="name" required />
-          </div>
-          <div className="input-grp">
-            <label htmlFor="email">email</label>
+          <div className="mb-5">
+            <label className="block ml-1 pb-1" htmlFor="name">
+              Name
+            </label>
             <input
+              className="w-[400px] h-10 border-2 border-[#95a0a7] rounded-lg text-lg"
+              onBlur={handleNameBlur}
+              type="text"
+              name="name"
+              required
+            />
+          </div>
+          <div className="mb-5">
+            <label className="block ml-1 pb-1" htmlFor="email">
+              email
+            </label>
+            <input
+              className="w-[400px] h-10 border-2 border-[#95a0a7] rounded-lg text-lg"
               value={user?.email}
               readOnly
               type="email"
@@ -48,9 +61,12 @@ const Shipment = () => {
               required
             />
           </div>
-          <div className="input-grp">
-            <label htmlFor="address">Address</label>
+          <div className="mb-5">
+            <label className="block ml-1 pb-1" htmlFor="address">
+              Address
+            </label>
             <input
+              className="w-[400px] h-10 border-2 border-[#95a0a7] rounded-lg text-lg"
               onBlur={handleAddressBlur}
               type="text"
               name="address"
@@ -58,9 +74,12 @@ const Shipment = () => {
               required
             />
           </div>
-          <div className="input-grp">
-            <label htmlFor="confirm-password">Confirm Password</label>
+          <div className="mb-5">
+            <label className="block ml-1 pb-1" htmlFor="confirm-password">
+              Confirm Password
+            </label>
             <input
+              className="w-[400px] h-10 border-2 border-[#95a0a7] rounded-lg text-lg"
               onBlur={handlePhoneNumberBlur}
               type="text"
               name="phone"
@@ -69,7 +88,11 @@ const Shipment = () => {
             />
           </div>
           <p style={{ color: "red" }}>{error}</p>
-          <input className="form-submit" type="submit" value="Add Shipping" />
+          <input
+            className="w-[400px] rounded-lg h-10 text-xl cursor-pointer bg-orange-300 hover:bg-orange-400"
+            type="submit"
+            value="Add Shipping"
+          />
         </form>
       </div>
     </div>
