@@ -14,17 +14,47 @@ const Header = () => {
   };
 
   return (
-    <nav className="header">
-      <img src={logo} alt="" />
+    <nav className="bg-[#1c2b35] h-20 flex items-center px-36 justify-between">
+      <img src={logo} alt="logo" />
       <div>
-        <Link to="/shop">Shop</Link>
-        <Link to="/orders">Orders</Link>
-        <Link to="/inventory">Inventory</Link>
-        <Link to="/about">About</Link>
+        <Link
+          className="text-white font-normal text-lg ml-9 hover:text-[#daa520]"
+          to="/shop"
+        >
+          Shop
+        </Link>
+        <Link
+          className="text-white font-normal text-lg ml-9 hover:text-[#daa520]"
+          to="/orders"
+        >
+          Orders
+        </Link>
+        <Link
+          className="text-white font-normal text-lg ml-9 hover:text-[#daa520]"
+          to="/inventory"
+        >
+          Inventory
+        </Link>
+        <Link
+          className="text-white font-normal text-lg ml-9 hover:text-[#daa520]"
+          to="/about"
+        >
+          About
+        </Link>
         {user ? (
-          <button onClick={handleSignOut}>Sign Up</button>
+          <button
+            className="text-white font-normal text-lg ml-9 hover:text-[#daa520]"
+            onClick={handleSignOut}
+          >
+            Sign Out
+          </button>
         ) : (
-          <Link to="/login">Login</Link>
+          <Link
+            className="text-white font-normal text-lg ml-9 hover:text-[#daa520]"
+            to="/login"
+          >
+            Login
+          </Link>
         )}
       </div>
     </nav>
