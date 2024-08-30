@@ -13,7 +13,7 @@
 }
 
 .cart-container {
-  background: rgba(255, 153, 0, 0.3);
+  background: #ff99004d;
 }
 
 .pagination button {
@@ -23,6 +23,6 @@
 }
 
 .pagination .selected {
-  background-color: orange;
+  background-color: #ffa500;
   color: white;
 }

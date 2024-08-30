@@ -5,7 +5,6 @@ import useProducts from "../../Hooks/useProducts";
 import { addToDb, getStoredCart } from "../../utilities/fakedb";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
-import "./Shop.css";
 
 const Shop = () => {
   const [products, setProducts] = useProducts();
@@ -50,8 +49,8 @@ const Shop = () => {
   };
 
   return (
-    <div className="shop-container">
-      <div className="product-container">
+    <div className="grid grid-cols-4">
+      <div className="grid col-span-3 gap-11 mt-20 mx-20">
         {products.map((product) => (
           <Product
             key={product._id}
@@ -60,10 +59,10 @@ const Shop = () => {
           ></Product>
         ))}
 
-        <div className="pagination">
+        <div className="mr-2 bg-white border border-[#ffa500]">
           {[...Array(pageCount).keys()].map((number) => (
             <button
-              className={page === number ? "selected" : ""}
+              className={page === number ? "bg-[#ffa500] text-white" : ""}
               onClick={() => setPage(number)}
             >
               {number + 1}
@@ -79,7 +78,7 @@ const Shop = () => {
           </select>
         </div>
       </div>
-      <div className="cart-container">
+      <div className="bg-[#ff99004d]">
         <Cart cart={cart}>
           <Link to="/orders">
             <button>Review Button</button>
