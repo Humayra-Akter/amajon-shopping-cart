@@ -50,14 +50,16 @@ const Shop = () => {
 
   return (
     <div className="grid grid-cols-4">
-      <div className="grid col-span-3 gap-11 mt-20 mx-20">
-        {products.map((product) => (
-          <Product
-            key={product._id}
-            product={product}
-            handleAddToCart={handleAddToCart}
-          ></Product>
-        ))}
+      <div className="grid col-span-3 gap-11 mt-20 ml-20">
+        <div className="grid grid-cols-3 gap-y-8">
+          {products.map((product) => (
+            <Product
+              key={product._id}
+              product={product}
+              handleAddToCart={handleAddToCart}
+            ></Product>
+          ))}
+        </div>
 
         <div className="mr-2 bg-white border border-[#ffa500]">
           {[...Array(pageCount).keys()].map((number) => (
