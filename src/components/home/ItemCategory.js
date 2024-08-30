@@ -43,7 +43,7 @@ const categories = [
 const ItemCategory = () => {
   return (
     <div className="my-10 px-4">
-      <h2 className="text-3xl text-center text-[#daa520] hover:text-[#1c2b35] font-bold mb-4">
+      <h2 className="text-3xl text-center text-[#daa520] font-bold mb-7">
         Shop by Category
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
