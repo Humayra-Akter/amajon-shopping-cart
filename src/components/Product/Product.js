@@ -16,9 +16,9 @@ const Product = (props) => {
   };
 
   return (
-    <div className="w-[305px] h-[500px] border border-[#95a0a7] rounded-lg relative">
+    <div className="w-[305px] h-[500px] border border-[#95a0a7] rounded-lg">
       <img
-        className="w-[286px] h-[286px] flex items-center justify-center rounded-lg m-2"
+        className="w-[286px] h-[204px] flex items-center justify-center rounded-lg m-2"
         src={img}
         alt={name}
       />
@@ -34,14 +34,14 @@ const Product = (props) => {
       </div>
       <button
         onClick={() => props.handleAddToCart(props.product)}
-        className="h-12 w-[303px] bg-[#ffe0b3] rounded-r-xl rounded-l-xl absolute bottom-0 flex items-center justify-center hover:bg[#daa520]"
+        className="h-12 w-[303px] bg-[#ffe0b3] rounded-r-xl rounded-l-xl  bottom-0 flex items-center justify-center hover:bg[#daa520]"
       >
         <h4 className="mr-1">Add to Cart </h4>
         <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
       </button>
       <button
         onClick={handleModalOpen}
-        className="h-12 w-[303px] bg-[#ff9900] rounded-r-xl rounded-l-xl absolute bottom-12 flex items-center justify-center hover:bg-[#cc7a00] mt-2"
+        className="h-12 w-[303px] bg-[#ff9900] rounded-r-xl rounded-l-xl bottom-12 flex items-center justify-center hover:bg-[#cc7a00] mt-2"
       >
         View Details
       </button>
