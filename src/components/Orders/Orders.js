@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import useCart from "../../Hooks/useCart";
 import Cart from "../Cart/Cart";
 import ReviewItem from "../ReviewItem/ReviewItem";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTruckFast } from "@fortawesome/free-solid-svg-icons";
 
 const Orders = () => {
   const [cart, setCart] = useCart();
@@ -27,10 +29,15 @@ const Orders = () => {
           />
         ))}
       </div>
-      <div className="cart-section">
+      {/* <div className="fixed right-44"> */}
+      <div>
         <Cart cart={cart}>
-          <button onClick={() => navigate("/shipment")}>
+          <button
+            className="h-10 mt-6 bg-[#efba6a] rounded-r-xl rounded-l-xl gap-3 w-full flex items-center justify-center hover:bg-[#cc7a00] px-3"
+            onClick={() => navigate("/shipment")}
+          >
             Proceed Shipping
+            <FontAwesomeIcon icon={faTruckFast} />
           </button>
         </Cart>
       </div>

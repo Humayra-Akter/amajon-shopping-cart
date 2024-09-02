@@ -5,6 +5,8 @@ import useProducts from "../../Hooks/useProducts";
 import { addToDb, getStoredCart } from "../../utilities/fakedb";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
+import { faMagnifyingGlassDollar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Shop = () => {
   const [products, setProducts] = useProducts();
@@ -80,10 +82,13 @@ const Shop = () => {
           </select>
         </div>
       </div>
-      <div className="bg-[#ff99004d]">
+      <div>
         <Cart cart={cart}>
           <Link to="/orders">
-            <button>Review Button</button>
+            <button className="h-10 mt-6 bg-[#efba6a] rounded-r-xl rounded-l-xl gap-3 w-full flex items-center justify-center hover:bg-[#cc7a00] px-3">
+              Review Button
+              <FontAwesomeIcon icon={faMagnifyingGlassDollar} />
+            </button>
           </Link>
         </Cart>
       </div>

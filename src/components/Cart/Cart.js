@@ -21,8 +21,8 @@ const Cart = ({ cart, children }) => {
   const { total, shippingTotal, tax, grandTotal, quantity } = calculateTotals();
 
   return (
-    <div className="cart-summary">
-      <h2>Order Summary</h2>
+    <div className="bg-[#fddcab] p-7 fixed h-screen w-[260px] right-10">
+      <h2 className="font-extrabold text-2xl mb-5">Order Summary</h2>
       <p>Selected Items: {quantity}</p>
       <p>Total Price: ${total}</p>
       <p>Total Shipping Charge: ${shippingTotal}</p>

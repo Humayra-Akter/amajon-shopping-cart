@@ -10,7 +10,8 @@ const ReviewItem = ({ product, handleRemoveProduct }) => {
       <img className="w-24 h-24 rounded-md" src={img} alt={name} />
       <div className="w-full ml-4">
         <p className="text-md font-semibold" title={name}>
-          {name.length > 20 ? name.slice(0, 20) + "..." : name}
+          {/* {name.length > 20 ? name.slice(0, 20) + "..." : name} */}
+          {name}
         </p>
         <p>
           Price: <span className="price">${price}</span>
