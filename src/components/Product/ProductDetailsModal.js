@@ -20,14 +20,43 @@ const ProductDetailsModal = ({ product, isOpen, onClose }) => {
           alt={product.name}
         />
         <h2 className="text-2xl font-semibold mt-4">{product.name}</h2>
-        <p className="mt-2">Category: {product.category}</p>
-        <p className="mt-2">Seller: {product.seller}</p>
-        <p className="mt-2">Price: ${product.price}</p>
-        <p className="mt-2">Stock: {product.stock} available</p>
-        <p className="mt-2">Ratings: {product.ratings} stars</p>
-        <p className="mt-2">Ratings Count: {product.ratingsCount}</p>
-        <p className="mt-2">Shipping: ${product.shipping}</p>
-        <p className="mt-2">Quantity: {product.quantity}</p>
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+            <p className="mt-2">
+              <span className="font-semibold">Category:</span>
+              {product.category}
+            </p>
+            <p className="mt-2">
+              <span className="font-semibold">Seller: </span>
+              {product.seller}
+            </p>
+            <p className="mt-2">
+              <span className="font-semibold">Price: </span> ${product.price}
+            </p>
+            <p className="mt-2">
+              <span className="font-semibold">Stock: </span>
+              {product.stock} available
+            </p>
+          </div>
+          <div>
+            <p className="mt-2">
+              <span className="font-semibold">Ratings: </span>
+              {product.ratings} stars
+            </p>
+            <p className="mt-2">
+              <span className="font-semibold">Ratings Count: </span>
+              {product.ratingsCount}
+            </p>
+            <p className="mt-2">
+              <span className="font-semibold">Shipping: </span> $
+              {product.shipping}
+            </p>
+            <p className="mt-2">
+              <span className="font-semibold">Quantity: </span>
+              {product.quantity}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
