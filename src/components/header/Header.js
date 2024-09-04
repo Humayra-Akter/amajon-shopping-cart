@@ -14,7 +14,9 @@ const Header = () => {
 
   return (
     <nav className="bg-[#1c2b35] h-20 flex items-center px-36 justify-between">
-      <img src={logo} alt="logo" />
+      <Link to="/">
+        <img src={logo} alt="logo" />
+      </Link>
       <div>
         <Link
           className="text-white font-normal text-lg ml-9 hover:text-[#daa520]"
