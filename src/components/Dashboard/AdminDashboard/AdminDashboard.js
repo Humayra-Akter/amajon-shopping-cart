@@ -10,11 +10,7 @@ const AdminDashboard = () => {
           fontFamily: "'Concert One', cursive",
         }}
       >
-        <input
-          id="admin-drawer-2"
-          type="checkbox"
-          className="drawer-toggle"
-        />
+        <input id="admin-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col items-left">
           <h1 className="w-full h-full font-extrabold text-left text-5xl text-secondary    pl-4 pt-7">
             Dashboard
@@ -35,79 +31,63 @@ const AdminDashboard = () => {
                 to="/adminDashboard"
                 className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full pt-20 uppercase h-full font-bold    text-center text-sm text-secondary"
               >
-                👉 Profile
+                👉 Event Management
               </Link>
             </li>
             <li>
               <Link
-                to="/adminDashboard/orderHistory"
-                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold    text-center text-sm text-secondary"
+                to="/adminDashboard/projectManagement"
+                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm text-secondary"
               >
-                👉 Order History
+                👉 Project Management
               </Link>
             </li>
             <li>
               <Link
-                to="/adminDashboard/adminCabin"
-                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold    text-center text-sm text-secondary"
+                to="/adminDashboard/staffManagement"
+                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm text-secondary"
               >
-                👉 Admin Cabin
+                👉 Staff Management
               </Link>
             </li>
             <li>
               <Link
-                to="/adminDashboard/adminDonation"
-                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold  text-center text-sm text-secondary"
+                to="/adminDashboard/taskManagement"
+                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm text-secondary"
               >
-                👉 Admin Donation
+                👉 Task Management
               </Link>
             </li>
             <li>
               <Link
-                to="/adminDashboard/adminFeedback"
-                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold    text-center text-sm text-secondary"
+                to="/adminDashboard/volunteer"
+                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm text-secondary"
               >
-                👉 Admin Feedback
+                👉 Volunteer
               </Link>
             </li>
             <li>
               <Link
-                to="/adminDashboard/adminPrice"
-                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold    text-center text-sm text-secondary"
+                to="/adminDashboard/donor"
+                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm text-secondary"
               >
-                👉 Admin Price
+                👉 Donor
               </Link>
             </li>
             <li>
               <Link
-                to="/adminDashboard/appointments"
-                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold    text-center text-sm text-secondary"
+                to="/adminDashboard/transaction"
+                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm text-secondary"
               >
-                👉 Appointments
+                👉 Transaction
               </Link>
             </li>
             <li>
               <Link
-                to="/adminDashboard/notifications"
-                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold    text-center text-sm text-secondary"
+                to="/"
+                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm text-secondary"
               >
-                👉 Notifications
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/adminDashboard/loyalty"
-                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold    text-center text-sm text-secondary"
-              >
-                👉 Loyalty & Rewards
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/adminDashboard/wishlist"
-                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold    text-center text-sm text-secondary"
-              >
-                👉 Wishlist
+                👉 Home
               </Link>
             </li>
           </ul>
