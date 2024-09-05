@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
+import Signin from "./Signin";
+import SignUP from "./SignUP";
 
 const Abouts = () => {
-      return (
-            <div>
-                  <h1>This is About!!!!!!!!!!!!!!!!!!!!</h1>
-            </div>
-      );
+  return (
+    <div>
+      {/* <Signin />
+       */}
+      <SignUP />
+    </div>
+  );
 };
 
 export default Abouts;
