@@ -1,14 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import Header from "../header/Header";
 
 const ReviewItem = ({ product, handleRemoveProduct }) => {
   const { name, img, price, shipping, quantity } = product;
 
   return (
     <div>
-      <Header />
+    
       <div className="border border-[#95a0a7] rounded-lg p-2 mt-5 h-28 w-[500px] left-0 top-0 flex justify-between mx-20">
         <img className="w-24 h-24 rounded-md" src={img} alt={name} />
         <div className="w-full ml-4">

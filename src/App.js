@@ -11,6 +11,8 @@ import Shop from "./components/Shop/Shop";
 import SignUp from "./components/SignUp/SignUp";
 import Home from "./components/home/Home";
 import ReviewItem from "./components/ReviewItem/ReviewItem";
+import AdminDashboard from "./components/Dashboard/AdminDashboard/AdminDashboard";
+import AdminProfile from "./components/Dashboard/AdminDashboard/AdminProfile";
 
 function App() {
   return (
@@ -43,11 +45,11 @@ function App() {
 
         
     
-            {/* <Route path="customerDashboard" element={<DashboardCustomer />}> */}
-              {/* <Route index element={<CustomerProfile />}></Route> */}
+           <Route path="adminDashboard" element={<AdminDashboard />}> 
+             <Route index element={<AdminProfile />}></Route>
               {/* <Route path="orderHistory" element={<OrderHistory />}></Route> */}
             
-            {/* </Route> */}
+          </Route> 
  
       </Routes>
     </div>

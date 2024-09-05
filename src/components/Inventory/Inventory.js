@@ -4,7 +4,7 @@ import AdminDashboard from "../Dashboard/AdminDashboard/AdminDashboard";
 const Inventory = () => {
   return (
     <div>
-      <AdminDashboard />
+     <h2>Inventory</h2>
     </div>
   );
 };

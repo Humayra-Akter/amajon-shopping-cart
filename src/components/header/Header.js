@@ -38,6 +38,12 @@ const Header = () => {
         </Link>
         <Link
           className="text-white font-normal text-lg ml-9 hover:text-[#daa520]"
+          to="/adminDashboard"
+        >
+          Dashboard
+        </Link>
+        <Link
+          className="text-white font-normal text-lg ml-9 hover:text-[#daa520]"
           to="/about"
         >
           About

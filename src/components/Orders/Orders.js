@@ -32,7 +32,6 @@ const Orders = () => {
             />
           ))}
         </div>
-        {/* <div className="fixed right-44"> */}
         <div>
           <Cart cart={cart}>
             <button
