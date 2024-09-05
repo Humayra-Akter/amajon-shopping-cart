@@ -15,7 +15,7 @@ import ReviewItem from "./components/ReviewItem/ReviewItem";
 function App() {
   return (
     <div>
-      <Header></Header>
+      {/* <Header></Header> */}
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/shop" element={<Shop />}></Route>
@@ -40,6 +40,15 @@ function App() {
         <Route path="/review" element={<ReviewItem />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
+
+        
+    
+            {/* <Route path="customerDashboard" element={<DashboardCustomer />}> */}
+              {/* <Route index element={<CustomerProfile />}></Route> */}
+              {/* <Route path="orderHistory" element={<OrderHistory />}></Route> */}
+            
+            {/* </Route> */}
+ 
       </Routes>
     </div>
   );
