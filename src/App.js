@@ -12,6 +12,7 @@ import Home from "./components/home/Home";
 import ReviewItem from "./components/ReviewItem/ReviewItem";
 import AdminDashboard from "./components/Dashboard/AdminDashboard/AdminDashboard";
 import EventManagement from "./components/Dashboard/AdminDashboard/EventManagement";
+import ProjectManagement from "./components/Dashboard/AdminDashboard/ProjectManagement";
 
 function App() {
   return (
@@ -41,14 +42,13 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
 
-        
-    
-           <Route path="adminDashboard" element={<AdminDashboard />}> 
-              <Route index element={<EventManagement />}></Route>
-              {/* <Route path="orderHistory" element={<OrderHistory />}></Route> */}
-            
-          </Route> 
- 
+        <Route path="adminDashboard" element={<AdminDashboard />}>
+          <Route index element={<EventManagement />} />
+          <Route
+            path="projectManagement"
+            element={<ProjectManagement />}
+          ></Route>
+        </Route>
       </Routes>
     </div>
   );

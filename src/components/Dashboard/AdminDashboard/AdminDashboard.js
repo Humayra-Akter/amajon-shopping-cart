@@ -4,15 +4,10 @@ import { Link, Outlet } from "react-router-dom";
 const AdminDashboard = () => {
   return (
     <div>
-      <div
-        className="drawer lg:drawer-open"
-        style={{
-          fontFamily: "'Concert One', cursive",
-        }}
-      >
+      <div className="drawer lg:drawer-open">
         <input id="admin-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col items-left">
-          <h1 className="w-full h-full font-extrabold text-left text-5xl text-secondary    pl-4 pt-7">
+          <h1 className="w-full h-full font-extrabold text-left text-5xl text-secondary pl-4 pt-7">
             Dashboard
           </h1>
           <Outlet />
