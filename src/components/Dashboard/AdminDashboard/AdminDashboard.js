@@ -6,7 +6,7 @@ const AdminDashboard = () => {
     <div>
       <div className="drawer lg:drawer-open">
         <input id="admin-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col items-left">
+        <div className="drawer-content flex flex-col ">
           <h1 className="w-full h-full font-extrabold text-left text-5xl text-secondary pl-4 pt-7">
             Dashboard
           </h1>
@@ -24,7 +24,7 @@ const AdminDashboard = () => {
             <li>
               <Link
                 to="/adminDashboard"
-                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full pt-20 uppercase h-full font-bold    text-center text-sm text-secondary"
+                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full pt-20 uppercase h-full font-bold text-center text-sm text-secondary"
               >
                 👉 Event Management
               </Link>

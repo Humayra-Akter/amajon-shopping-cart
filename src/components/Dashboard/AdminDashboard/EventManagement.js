@@ -27,7 +27,6 @@ const EventManagement = () => {
   };
 
   const updateEvent = (id) => {
-    // Dummy update logic, replace this with actual logic when integrating with backend
     const updatedEvents = events.map((event) =>
       event.id === id ? { ...event, status: "Updated" } : event
     );

@@ -6,10 +6,12 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import BannerSection from "./BannerSection";
 import Services from "./Services";
+import Header from "../header/Header";
 
 const Home = () => {
   return (
     <div>
+      <Header />
       <BannerSection />
       <ItemCategory />
       <Services />
