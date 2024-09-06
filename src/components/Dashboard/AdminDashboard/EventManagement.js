@@ -9,7 +9,7 @@ const EventManagement = () => {
       coordinator: "John Doe",
       appointedMembers: ["Alice", "Bob"],
       time: "10:00 AM - 3:00 PM",
-      totalBudget: "$5000",
+      totalBudget: "BDT5000",
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const EventManagement = () => {
       coordinator: "Jane Smith",
       appointedMembers: ["Tom", "Jerry"],
       time: "5:00 PM - 9:00 PM",
-      totalBudget: "$3000",
+      totalBudget: "BDT3000",
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const EventManagement = () => {
       coordinator: "David Lee",
       appointedMembers: ["Michael", "Sarah"],
       time: "9:00 AM - 6:00 PM",
-      totalBudget: "$10000",
+      totalBudget: "BDT10000",
     },
   ];
 
@@ -59,7 +59,12 @@ const EventManagement = () => {
   };
 
   const removeEvent = (id) => {
-    setEvents(events.filter((event) => event.id !== id));
+    const confirmation = window.confirm(
+      "Are you sure you want to remove this project?"
+    );
+    if (confirmation) {
+      setEvents(events.filter((event) => event.id !== id));
+    }
   };
 
   const addEvent = () => {
@@ -70,7 +75,7 @@ const EventManagement = () => {
       coordinator: "New Coordinator",
       appointedMembers: ["New Member"],
       time: "TBA",
-      totalBudget: "$1000",
+      totalBudget: "BDT0",
     };
     setEvents([...events, newEvent]);
   };
