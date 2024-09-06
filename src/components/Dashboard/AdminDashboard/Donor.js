@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Donor = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  return <div></div>;
 };
 
 export default Donor;

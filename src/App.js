@@ -13,6 +13,11 @@ import ReviewItem from "./components/ReviewItem/ReviewItem";
 import AdminDashboard from "./components/Dashboard/AdminDashboard/AdminDashboard";
 import EventManagement from "./components/Dashboard/AdminDashboard/EventManagement";
 import ProjectManagement from "./components/Dashboard/AdminDashboard/ProjectManagement";
+import StaffManagement from "./components/Dashboard/AdminDashboard/StaffManagement";
+import TaskManagement from "./components/Dashboard/AdminDashboard/TaskManagement";
+import Volunteer from "./components/Dashboard/AdminDashboard/Volunteer";
+import Donor from "./components/Dashboard/AdminDashboard/Donor";
+import Transaction from "./components/Dashboard/AdminDashboard/Transaction";
 
 function App() {
   return (
@@ -44,10 +49,12 @@ function App() {
 
         <Route path="adminDashboard" element={<AdminDashboard />}>
           <Route index element={<EventManagement />} />
-          <Route
-            path="projectManagement"
-            element={<ProjectManagement />}
-          ></Route>
+          <Route path="projectManagement" element={<ProjectManagement />} />
+          <Route path="staffManagement" element={<StaffManagement />} />
+          <Route path="taskManagement" element={<TaskManagement />} />
+          <Route path="volunteer" element={<Volunteer />} />
+          <Route path="donor" element={<Donor />} />
+          <Route path="transaction" element={<Transaction />} />
         </Route>
       </Routes>
     </div>
