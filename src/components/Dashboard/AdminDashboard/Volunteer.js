@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-// Sample data for volunteers
 const initialVolunteers = [
   {
     id: 1,
@@ -20,7 +19,6 @@ const initialVolunteers = [
     dob: "1985-05-15",
     gender: "Male",
   },
-  // Add more volunteers as needed
 ];
 
 const Volunteer = () => {

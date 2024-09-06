@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const TaskManagement = () => {
-  // Dummy task data
+
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -28,7 +28,7 @@ const TaskManagement = () => {
 
   const [filterText, setFilterText] = useState("");
   const [sortAsc, setSortAsc] = useState(true);
-  const [showModal, setShowModal] = useState(false); // To control the modal visibility
+  const [showModal, setShowModal] = useState(false); 
   const [newTask, setNewTask] = useState({
     campaignName: "",
     head: "",

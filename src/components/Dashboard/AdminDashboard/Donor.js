@@ -19,6 +19,24 @@ const initialDonors = [
     dob: "1985-05-15",
     gender: "Male",
   },
+  {
+    id: 3,
+    name: "Mary Curry",
+    nid: "983434321",
+    email: "mary@example.com",
+    phone: "098-765-4313",
+    dob: "1995-09-15",
+    gender: "Female",
+  },
+  {
+    id: 4,
+    name: "Nick Johnas",
+    nid: "9876579874",
+    email: "nick@example.com",
+    phone: "098-945-4321",
+    dob: "2002-12-15",
+    gender: "Male",
+  },
 ];
 
 const Donor = () => {
