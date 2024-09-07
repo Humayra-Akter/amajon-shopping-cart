@@ -47,7 +47,14 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
 
-        <Route path="adminDashboard" element={<AdminDashboard />}>
+        <Route
+          path="/adminDashboard"
+          element={
+            <RequireAuth>
+              <AdminDashboard />
+            </RequireAuth>
+          }
+        >
           <Route index element={<EventManagement />} />
           <Route path="projectManagement" element={<ProjectManagement />} />
           <Route path="staffManagement" element={<StaffManagement />} />
@@ -56,6 +63,16 @@ function App() {
           <Route path="donor" element={<Donor />} />
           <Route path="transaction" element={<Transaction />} />
         </Route>
+
+        {/* <Route path="adminDashboard" element={<AdminDashboard />}>
+          <Route index element={<EventManagement />} />
+          <Route path="projectManagement" element={<ProjectManagement />} />
+          <Route path="staffManagement" element={<StaffManagement />} />
+          <Route path="taskManagement" element={<TaskManagement />} />
+          <Route path="volunteer" element={<Volunteer />} />
+          <Route path="donor" element={<Donor />} />
+          <Route path="transaction" element={<Transaction />} />
+        </Route> */}
       </Routes>
     </div>
   );
