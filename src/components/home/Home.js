@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import BannerSection from "./BannerSection";
 import Services from "./Services";
 import Header from "../header/Header";
+import Events from "./Events";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Header />
       <BannerSection />
       <ItemCategory />
+      <Events />
       <Services />
       <MostFavorite />
       <Reviews />
