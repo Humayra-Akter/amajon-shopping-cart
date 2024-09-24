@@ -51,41 +51,48 @@ const Events = () => {
   };
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto bg-white shadow-lg overflow-hidden">
-      <div className="relative h-96">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute top-0 left-0 w-full h-full transition-transform duration-500 ${
-              index === current ? "opacity-100" : "opacity-0"
-            }`}
-            style={{
-              backgroundImage: `url(${slide.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            {index === current && (
-              <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-start p-10 text-white">
-                <h1 className="text-4xl font-bold uppercase">{slide.name}</h1>
-                <p className="mt-4">{slide.description}</p>
-                <button className="mt-4 px-6 py-2 bg-blue-500 rounded hover:bg-blue-700 transition-all">
-                  See More
-                </button>
+    <div className="relative w-full max-w-5xl mx-auto">
+      <div className="overflow-hidden">
+        <div
+          className="flex transition-transform duration-500"
+          style={{ transform: `translateX(-${current * 100}%)` }}
+        >
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`flex-shrink-0 w-full relative h-96 p-6 ${
+                index === current ? "scale-105" : "scale-90"
+              } transition-transform duration-300`}
+            >
+              <div
+                className="w-full h-full bg-cover bg-center rounded-lg shadow-lg relative"
+                style={{
+                  backgroundImage: `url(${slide.image})`,
+                }}
+              >
+                <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-start p-10 text-white">
+                  <h1 className="text-3xl font-bold uppercase">{slide.name}</h1>
+                  <p className="mt-4">{slide.description}</p>
+                  <button className="mt-4 px-6 py-2 bg-blue-500 rounded hover:bg-blue-700 transition-all">
+                    See More
+                  </button>
+                </div>
               </div>
-            )}
-          </div>
-        ))}
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Controls */}
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-4">
+      <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
         <button
           onClick={prevSlide}
           className="w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors"
         >
           <i className="fa-solid fa-arrow-left"></i>
         </button>
+      </div>
+      <div className="absolute top-1/2 right-4 transform -translate-y-1/2">
         <button
           onClick={nextSlide}
           className="w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors"
