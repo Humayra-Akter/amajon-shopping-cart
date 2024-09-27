@@ -23,6 +23,7 @@ import StaffProfile from "./components/Dashboard/StaffDashboard/StaffProfile";
 import StaffProject from "./components/Dashboard/StaffDashboard/StaffProject";
 import StaffEvent from "./components/Dashboard/StaffDashboard/StaffEvent";
 import StaffVolunteer from "./components/Dashboard/StaffDashboard/StaffVolunteer";
+import DonorDashboard from "./components/Dashboard/DonorDashboard/DonorDashboard";
 
 function App() {
   return (
@@ -50,8 +51,7 @@ function App() {
         <Route path="/about" element={<Abouts />}></Route>
         <Route path="/review" element={<ReviewItem />}></Route>
         <Route path="/login" element={<Login />}></Route>
-        <Route path="/signup" element={<SignUp />}></Route>
-
+        <Route path="/signup" element={<SignUp />}></Route>{" "}
         <Route
           path="/adminDashboard"
           element={
@@ -68,15 +68,14 @@ function App() {
           <Route path="donor" element={<Donor />} />
           <Route path="transaction" element={<Transaction />} />
         </Route>
-
         <Route path="staffDashboard" element={<StaffDashboard />}>
           <Route index element={<StaffProfile />} />
-
           <Route path="staffProject" element={<StaffProject />} />
           <Route path="staffEvent" element={<StaffEvent />} />
           <Route path="taskManagement" element={<TaskManagement />} />
           <Route path="staffVolunteer" element={<StaffVolunteer />} />
         </Route>
+        <Route path="/donorDashboard" element={<DonorDashboard />}></Route>
       </Routes>
     </div>
   );
