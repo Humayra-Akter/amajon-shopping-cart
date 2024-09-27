@@ -21,6 +21,8 @@ import Transaction from "./components/Dashboard/AdminDashboard/Transaction";
 import StaffDashboard from "./components/Dashboard/StaffDashboard/StaffDashboard";
 import StaffProfile from "./components/Dashboard/StaffDashboard/StaffProfile";
 import StaffProject from "./components/Dashboard/StaffDashboard/StaffProject";
+import StaffEvent from "./components/Dashboard/StaffDashboard/StaffEvent";
+import StaffVolunteer from "./components/Dashboard/StaffDashboard/StaffVolunteer";
 
 function App() {
   return (
@@ -71,11 +73,9 @@ function App() {
           <Route index element={<StaffProfile />} />
 
           <Route path="staffProject" element={<StaffProject />} />
-          <Route path="staffManagement" element={<StaffManagement />} />
+          <Route path="staffEvent" element={<StaffEvent />} />
           <Route path="taskManagement" element={<TaskManagement />} />
-          <Route path="volunteer" element={<Volunteer />} />
-          <Route path="donor" element={<Donor />} />
-          <Route path="transaction" element={<Transaction />} />
+          <Route path="staffVolunteer" element={<StaffVolunteer />} />
         </Route>
       </Routes>
     </div>

@@ -39,7 +39,7 @@ const StaffDashboard = () => {
             </li>
             <li>
               <Link
-                to="/staffDashboard/staffManagement"
+                to="/staffDashboard/staffEvent"
                 className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm"
               >
                 👉 Event
@@ -47,7 +47,7 @@ const StaffDashboard = () => {
             </li>
             <li>
               <Link
-                to="/staffDashboard/volunteer"
+                to="/staffDashboard/staffVolunteer"
                 className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm"
               >
                 👉 Volunteer
