@@ -24,6 +24,10 @@ import StaffProject from "./components/Dashboard/StaffDashboard/StaffProject";
 import StaffEvent from "./components/Dashboard/StaffDashboard/StaffEvent";
 import StaffVolunteer from "./components/Dashboard/StaffDashboard/StaffVolunteer";
 import DonorDashboard from "./components/Dashboard/DonorDashboard/DonorDashboard";
+import NeedyPeople from "./components/Dashboard/NeedyPeople/NeedyPeople";
+import NeedyProfile from "./components/Dashboard/NeedyPeople/NeedyProfile";
+import NeedyHistory from "./components/Dashboard/NeedyPeople/NeedyHistory";
+import ApplyHelp from "./components/Dashboard/NeedyPeople/ApplyHelp";
 
 function App() {
   return (
@@ -74,6 +78,11 @@ function App() {
           <Route path="staffEvent" element={<StaffEvent />} />
           <Route path="taskManagement" element={<TaskManagement />} />
           <Route path="staffVolunteer" element={<StaffVolunteer />} />
+        </Route>
+        <Route path="needyPeople" element={<NeedyPeople />}>
+          <Route index element={<NeedyProfile />} />
+          <Route path="applyHelp" element={<ApplyHelp />} />
+          <Route path="needyHistory" element={<NeedyHistory />} />
         </Route>
         <Route path="/donorDashboard" element={<DonorDashboard />}></Route>
       </Routes>

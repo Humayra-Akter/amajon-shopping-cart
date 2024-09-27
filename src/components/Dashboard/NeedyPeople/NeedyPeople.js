@@ -18,7 +18,7 @@ const NeedyPeople = () => {
             Open drawer
           </label>
         </div>
-        <div className="drawer-side fixed left-0 top-0 h-screen">
+        <div className="drawer-side fixed left-0 top-0 h-screen w-64">
           <label htmlFor="admin-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 h-full bg-gray-100 text-base-content">
             <li>
@@ -31,7 +31,7 @@ const NeedyPeople = () => {
             </li>
             <li>
               <Link
-                to="/needyPeople/projectManagement"
+                to="/needyPeople/applyHelp"
                 className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm"
               >
                 👉 Apply help
@@ -39,13 +39,13 @@ const NeedyPeople = () => {
             </li>
             <li>
               <Link
-                to="/needyPeople/staffManagement"
+                to="/needyPeople/needyHistory"
                 className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm"
               >
                 👉 History
               </Link>
             </li>
-            
+
             <li>
               <Link
                 to="/"
