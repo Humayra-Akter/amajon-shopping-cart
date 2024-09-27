@@ -26,15 +26,15 @@ const StaffDashboard = () => {
                 to="/staffDashboard"
                 className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full pt-20 uppercase h-full font-bold text-center text-sm"
               >
-                👉 Event Management
+                👉 Profile
               </Link>
             </li>
             <li>
               <Link
-                to="/staffDashboard/projectManagement"
+                to="/staffDashboard/staffProject"
                 className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm"
               >
-                👉 Project Management
+                👉 Project
               </Link>
             </li>
             <li>
@@ -42,15 +42,7 @@ const StaffDashboard = () => {
                 to="/staffDashboard/staffManagement"
                 className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm"
               >
-                👉 Staff Management
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/staffDashboard/taskManagement"
-                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm"
-              >
-                👉 Task Management
+                👉 Event
               </Link>
             </li>
             <li>
@@ -63,18 +55,10 @@ const StaffDashboard = () => {
             </li>
             <li>
               <Link
-                to="/staffDashboard/donor"
+                to="/staffDashboard/taskManagement"
                 className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm"
               >
-                👉 Donor
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/staffDashboard/transaction"
-                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm"
-              >
-                👉 Transaction
+                👉 Task Management
               </Link>
             </li>
             <li>

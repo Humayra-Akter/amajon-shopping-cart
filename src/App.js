@@ -18,6 +18,9 @@ import TaskManagement from "./components/Dashboard/AdminDashboard/TaskManagement
 import Volunteer from "./components/Dashboard/AdminDashboard/Volunteer";
 import Donor from "./components/Dashboard/AdminDashboard/Donor";
 import Transaction from "./components/Dashboard/AdminDashboard/Transaction";
+import StaffDashboard from "./components/Dashboard/StaffDashboard/StaffDashboard";
+import StaffProfile from "./components/Dashboard/StaffDashboard/StaffProfile";
+import StaffProject from "./components/Dashboard/StaffDashboard/StaffProject";
 
 function App() {
   return (
@@ -64,15 +67,16 @@ function App() {
           <Route path="transaction" element={<Transaction />} />
         </Route>
 
-        {/* <Route path="adminDashboard" element={<AdminDashboard />}>
-          <Route index element={<EventManagement />} />
-          <Route path="projectManagement" element={<ProjectManagement />} />
+        <Route path="staffDashboard" element={<StaffDashboard />}>
+          <Route index element={<StaffProfile />} />
+
+          <Route path="staffProject" element={<StaffProject />} />
           <Route path="staffManagement" element={<StaffManagement />} />
           <Route path="taskManagement" element={<TaskManagement />} />
           <Route path="volunteer" element={<Volunteer />} />
           <Route path="donor" element={<Donor />} />
           <Route path="transaction" element={<Transaction />} />
-        </Route> */}
+        </Route>
       </Routes>
     </div>
   );
