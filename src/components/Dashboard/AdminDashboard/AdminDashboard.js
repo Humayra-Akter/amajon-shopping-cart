@@ -55,6 +55,14 @@ const AdminDashboard = () => {
             </li>
             <li>
               <Link
+                to="/adminDashboard/needyPeopleManagement"
+                className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm"
+              >
+                👉 Needy People
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/adminDashboard/volunteer"
                 className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none w-full uppercase h-full font-bold text-center text-sm"
               >

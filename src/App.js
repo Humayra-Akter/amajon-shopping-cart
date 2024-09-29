@@ -29,6 +29,7 @@ import NeedyProfile from "./components/Dashboard/NeedyPeople/NeedyProfile";
 import NeedyHistory from "./components/Dashboard/NeedyPeople/NeedyHistory";
 import ApplyHelp from "./components/Dashboard/NeedyPeople/ApplyHelp";
 import StaffTask from "./components/Dashboard/StaffDashboard/StaffTask";
+import NeedyPeopleManagement from "./components/Dashboard/AdminDashboard/NeedyPeopleManagement";
 
 function App() {
   return (
@@ -69,6 +70,10 @@ function App() {
           <Route path="projectManagement" element={<ProjectManagement />} />
           <Route path="staffManagement" element={<StaffManagement />} />
           <Route path="taskManagement" element={<TaskManagement />} />
+          <Route
+            path="needyPeopleManagement"
+            element={<NeedyPeopleManagement />}
+          />
           <Route path="volunteer" element={<Volunteer />} />
           <Route path="donor" element={<Donor />} />
           <Route path="transaction" element={<Transaction />} />
